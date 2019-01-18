@@ -1,0 +1,28 @@
+#N canvas 581 268 529 307 10;
+#X obj 29 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 29 74 440;
+#X floatatom 29 109 5 0 0 0 - - -, f 5;
+#X obj 29 142 osc~;
+#X obj 28 215 *~;
+#X obj 28 271 dac~;
+#X text 27 8 A4;
+#X text 428 105 17-Jan-2019;
+#X text 70 108 frecuency;
+#X text 67 140 sine wave;
+#X obj 104 172 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 85 16 "Loudness is the subjective perception of sound pressure.
+More formally \, it is defined as \, "That attribute of auditory sensation
+in terms of which sounds can be ordered on a scale extending from quiet
+to loud."";
+#X text 239 79 https://en.wikipedia.org/wiki/Loudness;
+#X text 59 170 quiet;
+#X text 237 172 loud;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 0 5 1;
+#X connect 10 0 4 1;
