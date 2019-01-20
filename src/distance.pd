@@ -1,0 +1,17 @@
+#N canvas 371 204 450 300 10;
+#X obj 261 84 inlet;
+#X obj 150 80 inlet;
+#X obj 372 78 inlet;
+#X obj 39 77 inlet;
+#X obj 39 157 outlet;
+#X text 47 47 x1;
+#X text 162 52 y1;
+#X text 273 51 x2;
+#X text 387 52 y2;
+#X obj 39 115 expr sqrt(pow($f3 - $f1 \, 2) + pow($f4 - $f2 \, 2))
+;
+#X connect 0 0 9 2;
+#X connect 1 0 9 1;
+#X connect 2 0 9 3;
+#X connect 3 0 9 0;
+#X connect 9 0 4 0;

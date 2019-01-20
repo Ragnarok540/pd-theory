@@ -1,0 +1,20 @@
+#N canvas 852 57 483 300 10;
+#X obj 32 70 inlet;
+#X obj 122 69 inlet;
+#X obj 212 71 inlet;
+#X obj 302 70 inlet;
+#X obj 393 70 inlet;
+#X text 14 50 value $f1;
+#X text 118 49 istart $f2;
+#X text 283 51 ostart $f4;
+#X text 200 50 istop $f3;
+#X text 381 51 ostop $f5;
+#X obj 32 124 expr $f4 + ($f5 - $f4) * (($f1 - $f2) / ($f3 - $f2))
+;
+#X obj 32 162 outlet;
+#X connect 0 0 10 0;
+#X connect 1 0 10 1;
+#X connect 2 0 10 2;
+#X connect 3 0 10 3;
+#X connect 4 0 10 4;
+#X connect 10 0 11 0;

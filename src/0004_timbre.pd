@@ -1,0 +1,46 @@
+#N canvas 700 50 605 402 10;
+#X obj 14 28 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 14 57 440;
+#X obj 14 100 osc~;
+#X text 12 6 A4;
+#X text 33 41 frecuency;
+#X text 35 77 sine wave;
+#X text 510 133 19-Jan-2019;
+#X obj 15 171 amp;
+#X msg 33 140 127;
+#X msg 80 140 0;
+#X text 278 246 related concepts;
+#X msg 525 315 \; pd dsp 1 \;;
+#X msg 525 356 \; pd dsp 0 \;;
+#X text 167 9 "Timbre \, also known as tone color or tone quality from
+psychoacoustics \, is the perceived sound quality of a musical note
+\, sound or tone. Timbre distinguishes different types of sound production
+\, such as string instruments \, wind instruments \, and percussion
+instruments. It also enables listeners to distinguish different instruments
+in the same category.";
+#X obj 16 300 phasor~;
+#X text 337 109 https://en.wikipedia.org/wiki/Timbre;
+#X text 38 119 on;
+#X text 82 119 off;
+#X obj 16 226 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 16 255 440;
+#X text 14 197 A4;
+#X text 35 239 frecuency;
+#X obj 17 375 amp;
+#X msg 35 345 127;
+#X msg 82 345 0;
+#X text 40 324 on;
+#X text 84 324 off;
+#X text 27 281 sawtooth wave;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 7 0;
+#X connect 8 0 7 1;
+#X connect 9 0 7 1;
+#X connect 14 0 22 0;
+#X connect 18 0 19 0;
+#X connect 19 0 14 0;
+#X connect 23 0 22 1;
+#X connect 24 0 22 1;

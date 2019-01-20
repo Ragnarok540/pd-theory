@@ -1,0 +1,54 @@
+#N canvas 581 307 701 273 10;
+#X obj 89 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 89 59 440;
+#X obj 89 95 osc~;
+#X text 87 8 A4;
+#X obj 128 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 128 59 880;
+#X text 126 8 A5;
+#X obj 51 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 49 8 A3;
+#X msg 51 59 220;
+#X text 264 6 "Pitch is a perceptual property of sounds that allows
+their ordering on a frequency-related scale \, or more commonly \,
+pitch is the quality that makes it possible to judge sounds as "higher"
+and "lower" in the sense associated with musical melodies. Pitch can
+be determined only in sounds that have a frequency that is clear and
+stable enough to distinguish from noise. Pitch is a major auditory
+attribute of musical tones \, along with duration \, loudness \, and
+timbre.";
+#X text 383 133 https://en.wikipedia.org/wiki/Pitch_(music);
+#X text 608 163 17-Jan-2019;
+#X text 158 59 frecuency;
+#X text 127 93 sine wave;
+#X text 4 30 lower;
+#X text 150 29 higher;
+#X obj 89 207 amp;
+#X msg 107 178 127;
+#X msg 146 178 0;
+#X text 105 123 on;
+#X obj 107 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 146 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 142 124 off;
+#X msg 619 192 \; pd dsp 1 \;;
+#X msg 619 233 \; pd dsp 0 \;;
+#X obj 297 200 0002_loudness;
+#X text 321 176 related concepts;
+#X obj 297 227 0003_duration;
+#X obj 399 200 0004_timbre;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 17 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 7 0 9 0;
+#X connect 9 0 2 0;
+#X connect 18 0 17 1;
+#X connect 19 0 17 1;
+#X connect 21 0 18 0;
+#X connect 22 0 19 0;
