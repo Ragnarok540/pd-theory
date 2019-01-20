@@ -1,0 +1,22 @@
+#N canvas 506 57 559 318 10;
+#X obj 11 174 amp;
+#X text 210 233 related concepts;
+#X msg 475 235 \; pd dsp 1 \;;
+#X msg 475 276 \; pd dsp 0 \;;
+#X text 468 184 20-Jan-2019;
+#X text 124 4 "Noise is variously described as unpitched \, indeterminate
+\, uncontrolled \, loud \, unmusical \, or unwanted sound. Noise is
+an important component of the sound of the human voice and all musical
+instruments \, particularly in unpitched percussion instruments and
+electric guitars (using distortion). Electronic instruments create
+various colours of noise. Traditional uses of noise are unrestricted
+\, using all the frequencies associated with pitch and timbre \, such
+as the white noise component of a drum roll on a snare drum \, or the
+transients present in the prefix of the sounds of some organ pipes."
+;
+#X text 237 157 https://en.wikipedia.org/wiki/Noise_in_music;
+#X obj 10 16 noise~;
+#X obj 80 23 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X connect 7 0 0 0;
+#X connect 8 0 0 1;

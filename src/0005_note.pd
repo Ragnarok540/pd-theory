@@ -1,0 +1,41 @@
+#N canvas 506 57 569 344 10;
+#X msg 14 27 440;
+#X text 12 6 A4;
+#X text 24 91 sine wave;
+#X obj 15 228 amp;
+#X obj 33 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 33 169 127;
+#X msg 80 169 0;
+#X text 20 120 start sound;
+#X text 302 197 related concepts;
+#X msg 485 263 \; pd dsp 1 \;;
+#X msg 485 304 \; pd dsp 0 \;;
+#X text 148 5 "A note is the pitch and duration of a sound \, and also
+its representation in musical notation (♪ \, ♩). A note can also
+represent a pitch class. Notes are the building blocks of much written
+music: discretizations of musical phenomena that facilitate performance
+\, comprehension \, and analysis.";
+#X text 260 85 https://en.wikipedia.org/wiki/Musical_note;
+#X text 477 108 20-Jan-2019;
+#X msg 133 145 500;
+#X msg 177 160 250;
+#X text 135 122 1/2 second;
+#X text 170 140 1/4 second;
+#X text 48 51 frecuency;
+#X msg 62 26 261.63;
+#X text 61 5 C4;
+#X obj 308 223 0001_pitch;
+#X obj 308 248 0003_duration;
+#X obj 80 196 pipe 500;
+#X obj 14 70 osc~ 440;
+#X connect 0 0 24 0;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 5 0 3 1;
+#X connect 6 0 23 0;
+#X connect 14 0 23 1;
+#X connect 15 0 23 1;
+#X connect 19 0 24 0;
+#X connect 23 0 3 1;
+#X connect 24 0 3 0;
