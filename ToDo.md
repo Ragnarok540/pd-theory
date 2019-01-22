@@ -2,7 +2,6 @@
 
 * Frecuency <- Pitch
 * Melody <- Pitch
-* Interval <- Pitch
 * Phrase <- Duration
 * Section <- Duration
 * Composition <- Duration
@@ -23,3 +22,4 @@
 * Pitch Class <- Note
 * Colours of Noise <- Noise
 * Transients
+* Semitone <- Interval
