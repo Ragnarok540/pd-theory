@@ -1,0 +1,61 @@
+#N canvas 562 50 500 397 10;
+#X text 30 289 sine wave;
+#X obj 21 366 amp;
+#X msg 39 329 127;
+#X msg 86 329 0;
+#X text 270 163 related concepts;
+#X msg 416 313 \; pd dsp 1 \;;
+#X msg 416 354 \; pd dsp 0 \;;
+#X text 34 248 frecuency;
+#X obj 20 180 mtof;
+#X floatatom 20 230 5 0 0 0 - - -, f 5;
+#X floatatom 20 75 5 0 0 0 - - -, f 5;
+#X msg 20 33 69;
+#X floatatom 125 152 5 0 0 0 - - -, f 5;
+#X obj 20 268 osc~;
+#X text 135 290 sine wave;
+#X obj 126 367 amp;
+#X msg 144 330 127;
+#X msg 191 330 0;
+#X text 137 248 frecuency;
+#X obj 125 182 mtof;
+#X floatatom 125 231 5 0 0 0 - - -, f 5;
+#X obj 125 269 osc~;
+#X text 24 12 A4;
+#X text 42 310 on;
+#X text 149 310 on;
+#X text 87 313 off;
+#X text 193 311 off;
+#X obj 59 131 mton;
+#X symbolatom 59 160 4 0 0 0 - - -, f 4;
+#X obj 190 195 mton;
+#X symbolatom 190 224 4 0 0 0 - - -, f 4;
+#X obj 125 118 + 1;
+#X text 72 6 "A semitone \, also called a half step or a half tone
+\, is the smallest musical interval commonly used in Western tonal
+music \, and it is considered the most dissonant when sounded harmonically.
+It is defined as the interval between two adjacent notes in a 12-tone
+scale. For example \, C is adjacent to C♯ \; the interval between
+them is a semitone.";
+#X text 219 89 https://en.wikipedia.org/wiki/Semitone;
+#X text 408 107 22-Jan-2019;
+#X obj 276 189 0007_interval;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 8 0 9 0;
+#X connect 9 0 13 0;
+#X connect 10 0 8 0;
+#X connect 10 0 27 0;
+#X connect 10 0 31 0;
+#X connect 11 0 10 0;
+#X connect 12 0 19 0;
+#X connect 12 0 29 0;
+#X connect 13 0 1 0;
+#X connect 16 0 15 1;
+#X connect 17 0 15 1;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 21 0 15 0;
+#X connect 27 0 28 0;
+#X connect 29 0 30 0;
+#X connect 31 0 12 0;

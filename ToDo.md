@@ -22,4 +22,3 @@
 * Pitch Class <- Note
 * Colours of Noise <- Noise
 * Transients
-* Semitone <- Interval
