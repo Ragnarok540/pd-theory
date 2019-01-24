@@ -1,0 +1,63 @@
+#N canvas 562 50 500 447 10;
+#X text 24 335 sine wave;
+#X obj 15 412 amp;
+#X msg 33 375 127;
+#X msg 80 375 0;
+#X text 287 206 related concepts;
+#X msg 407 358 \; pd dsp 1 \;;
+#X msg 407 399 \; pd dsp 0 \;;
+#X text 28 294 frecuency;
+#X obj 14 226 mtof;
+#X floatatom 14 276 5 0 0 0 - - -, f 5;
+#X floatatom 14 121 5 0 0 0 - - -, f 5;
+#X msg 14 79 69;
+#X floatatom 119 198 5 0 0 0 - - -, f 5;
+#X obj 14 314 osc~;
+#X text 129 336 sine wave;
+#X obj 120 413 amp;
+#X msg 138 376 127;
+#X msg 185 376 0;
+#X text 131 294 frecuency;
+#X obj 119 228 mtof;
+#X floatatom 119 277 5 0 0 0 - - -, f 5;
+#X obj 119 315 osc~;
+#X text 18 58 A4;
+#X text 36 356 on;
+#X text 143 356 on;
+#X text 81 359 off;
+#X text 187 357 off;
+#X obj 53 177 mton;
+#X symbolatom 53 206 4 0 0 0 - - -, f 4;
+#X obj 184 241 mton;
+#X symbolatom 184 270 4 0 0 0 - - -, f 4;
+#X obj 293 232 0007_interval;
+#X text 68 9 "A major second (sometimes also called whole tone) is
+a second spanning two semitones. A second is a musical interval encompassing
+two adjacent staff positions. For example \, the interval from C to
+D is a major second \, as the note D lies two semitones above C \,
+and the two notes are notated on adjacent staff positions. Diminished
+\, minor and augmented seconds are notated on adjacent staff positions
+as well \, but consist of a different number of semitones (zero \,
+one \, and three).";
+#X text 194 137 https://en.wikipedia.org/wiki/Major_second;
+#X text 411 158 23-Jan-2019;
+#X obj 119 164 + 2;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 8 0 9 0;
+#X connect 9 0 13 0;
+#X connect 10 0 8 0;
+#X connect 10 0 27 0;
+#X connect 10 0 35 0;
+#X connect 11 0 10 0;
+#X connect 12 0 19 0;
+#X connect 12 0 29 0;
+#X connect 13 0 1 0;
+#X connect 16 0 15 1;
+#X connect 17 0 15 1;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 21 0 15 0;
+#X connect 27 0 28 0;
+#X connect 29 0 30 0;
+#X connect 35 0 12 0;

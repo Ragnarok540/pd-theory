@@ -37,8 +37,8 @@ music \, and it is considered the most dissonant when sounded harmonically.
 It is defined as the interval between two adjacent notes in a 12-tone
 scale. For example \, C is adjacent to C♯ \; the interval between
 them is a semitone.";
-#X text 219 89 https://en.wikipedia.org/wiki/Semitone;
-#X text 408 107 22-Jan-2019;
+#X text 219 105 https://en.wikipedia.org/wiki/Semitone;
+#X text 408 123 22-Jan-2019;
 #X obj 276 189 0007_interval;
 #X connect 2 0 1 1;
 #X connect 3 0 1 1;
