@@ -8,7 +8,6 @@
 * Tone <- Timbre
 * Scale <- Note
 * Mode <- Note
-* Unison <- Interval
 * Octave <- Interval
 * Consonance <- Interval
 * Dissonance <- Interval
