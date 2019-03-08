@@ -1,0 +1,61 @@
+#N canvas 560 236 450 408 10;
+#X text 28 290 sine wave;
+#X obj 19 367 amp;
+#X msg 37 330 127;
+#X msg 84 330 0;
+#X text 297 193 related concepts;
+#X msg 359 298 \; pd dsp 1 \;;
+#X msg 359 339 \; pd dsp 0 \;;
+#X text 32 249 frecuency;
+#X obj 18 181 mtof;
+#X floatatom 18 231 5 0 0 0 - - -, f 5;
+#X floatatom 18 76 5 0 0 0 - - -, f 5;
+#X msg 18 34 69;
+#X floatatom 123 153 5 0 0 0 - - -, f 5;
+#X obj 18 269 osc~;
+#X text 133 291 sine wave;
+#X obj 124 368 amp;
+#X msg 142 331 127;
+#X msg 189 331 0;
+#X text 135 249 frecuency;
+#X obj 123 183 mtof;
+#X floatatom 123 232 5 0 0 0 - - -, f 5;
+#X obj 123 270 osc~;
+#X text 22 13 A4;
+#X text 40 311 on;
+#X text 147 311 on;
+#X text 85 314 off;
+#X text 191 312 off;
+#X obj 57 132 mton;
+#X symbolatom 57 161 4 0 0 0 - - -, f 4;
+#X obj 188 196 mton;
+#X symbolatom 188 225 4 0 0 0 - - -, f 4;
+#X obj 303 219 0007_interval;
+#X obj 123 119 + 2;
+#X text 87 3 "A diminished third is the musical interval produced by
+narrowing a minor third by a chromatic semitone. For instance \, the
+interval from A to C is a minor third \, three semitones wide \, and
+both the intervals from A# to C \, and from A to Cb are diminished
+thirds \, two semitones wide. Being diminished \, it is considered
+a dissonant interval.";
+#X text 147 99 https://en.wikipedia.org/wiki/Diminished_third;
+#X text 357 121 07-Mar-2019;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 8 0 9 0;
+#X connect 9 0 13 0;
+#X connect 10 0 8 0;
+#X connect 10 0 27 0;
+#X connect 10 0 32 0;
+#X connect 11 0 10 0;
+#X connect 12 0 19 0;
+#X connect 12 0 29 0;
+#X connect 13 0 1 0;
+#X connect 16 0 15 1;
+#X connect 17 0 15 1;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 21 0 15 0;
+#X connect 27 0 28 0;
+#X connect 29 0 30 0;
+#X connect 32 0 12 0;
