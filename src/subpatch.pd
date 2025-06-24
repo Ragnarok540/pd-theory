@@ -1,0 +1,15 @@
+#N canvas 1554 50 693 514 12;
+#X floatatom 149 87 5 0 0 0 - - - 0;
+#X floatatom 149 229 5 0 0 0 - - - 0;
+#N canvas 1824 238 450 300 add-5 0;
+#X obj 40 102 inlet;
+#X obj 36 218 outlet;
+#X floatatom 115 123 5 0 0 0 - - - 0;
+#X obj 40 158 +;
+#X connect 0 0 3 0;
+#X connect 2 0 3 1;
+#X connect 3 0 1 0;
+#X coords 0 -1 1 1 85 60 1 100 100;
+#X restore 149 137 pd add-5;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
