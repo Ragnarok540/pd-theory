@@ -1,6 +1,6 @@
-#N canvas 1721 297 705 524 12;
-#X obj 133 8 loadbang;
-#X floatatom 133 67 5 0 0 0 - - - 0;
+#N canvas 2117 497 705 524 12;
+#X obj 147 8 loadbang;
+#X floatatom 147 67 5 0 0 0 - - - 0;
 #X obj 101 100 metro;
 #X obj 101 67 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 101 132 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -38,7 +38,8 @@
 #X obj 610 449 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 610 417 sel 8;
 #X obj 610 484 send Eight;
-#X msg 133 37 500;
+#X msg 147 37 500;
+#X obj 101 21 inlet;
 #X connect 0 0 39 0;
 #X connect 1 0 2 1;
 #X connect 2 0 4 0;
@@ -80,3 +81,4 @@
 #X connect 36 0 38 0;
 #X connect 37 0 36 0;
 #X connect 39 0 1 0;
+#X connect 40 0 3 0;
