@@ -1,4 +1,4 @@
-#N canvas 1896 414 603 327 12;
+#N canvas 1897 413 603 347 12;
 #X obj 427 36 tgl 39 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 427 80 s toggle;
 #X obj 497 35 bng 39 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -325,7 +325,7 @@
 #X connect 26 0 27 0;
 #X connect 27 0 9 1;
 #X restore 96 233 pd tape;
-#N canvas 1541 551 351 423 tape 1;
+#N canvas 1541 551 351 423 tape 0;
 #X obj 52 37 inlet;
 #X obj 34 13 r LFO;
 #X obj 34 85 +;
@@ -386,6 +386,7 @@
 #X obj 39 206 r note4;
 #X obj 96 206 r note5;
 #X obj 155 206 r note6;
+#X text 12 322 https://www.youtube.com/watch?v=7sTrn39TT7k;
 #X connect 0 0 1 0;
 #X connect 2 0 3 0;
 #X connect 4 0 2 0;
