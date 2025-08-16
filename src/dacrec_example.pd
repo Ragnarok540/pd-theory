@@ -1,0 +1,9 @@
+#N canvas 2023 150 450 300 12;
+#X obj 36 120 dacrec~;
+#X obj 36 20 phasor~ 220;
+#X obj 36 72 *~;
+#X obj 57 46 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 2 1;
