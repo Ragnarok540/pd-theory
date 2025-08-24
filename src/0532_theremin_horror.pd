@@ -87,6 +87,7 @@
 #X obj 631 276 *~ 0.8;
 #X obj 700 323 mtof;
 #X msg 631 180 24;
+#X text 45 843 https://www.youtube.com/watch?v=L_g3_n_QRKY;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 2 0 4 1;

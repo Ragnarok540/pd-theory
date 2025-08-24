@@ -1,4 +1,4 @@
-#N canvas 2117 497 705 524 12;
+#N canvas 689 259 705 524 12;
 #X obj 147 8 loadbang;
 #X floatatom 147 67 5 0 0 0 - - - 0;
 #X obj 101 100 metro;

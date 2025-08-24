@@ -1,4 +1,4 @@
-#N canvas 1502 701 450 300 12;
+#N canvas 148 215 450 300 12;
 #X obj 39 61 clock;
 #X obj 38 100 selector;
 #X obj 116 100 selector;
@@ -9,6 +9,7 @@
 #X obj 189 154 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 258 154 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 39 20 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X text 38 247 https://www.youtube.com/watch?v=8Nzaswa5C7g;
 #X connect 1 0 5 0;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
