@@ -1,4 +1,4 @@
-#N canvas 1511 217 797 514 12;
+#N canvas 1511 216 797 502 12;
 #X declare -lib Gem;
 #X obj 15 11 declare -lib Gem;
 #X msg 49 72 create \, 1;
@@ -21,7 +21,7 @@
 #X floatatom 271 321 5 0 1 0 - - - 0;
 #X floatatom 284 343 5 0 1 0 - - - 0;
 #X floatatom 297 365 5 0 1 0 - - - 0;
-#X text 18 475 https://www.youtube.com/watch?v=y1rBa_STq64;
+#X text 20 466 https://www.youtube.com/watch?v=y1rBa_STq64;
 #X obj 278 52 r rx;
 #X obj 298 98 r ry;
 #X obj 318 150 r rz;
