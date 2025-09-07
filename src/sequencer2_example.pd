@@ -1,1 +1,12 @@
-#N canvas 1976 561 450 300 12;
+#N canvas 2148 718 609 300 12;
+#X obj 75 83 sequencer2;
+#X obj 75 172 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X floatatom 75 148 5 0 0 0 - - - 0;
+#X obj 75 35 metro 500;
+#X obj 75 60 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 75 9 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 3 0;
