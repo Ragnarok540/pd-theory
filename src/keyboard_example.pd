@@ -1,0 +1,8 @@
+#N canvas 2438 475 492 366 12;
+#X obj 110 101 keyboard;
+#X floatatom 110 77 5 0 0 0 - - - 0;
+#X floatatom 323 77 5 0 0 0 - - - 0;
+#X floatatom 110 188 5 0 0 0 - - - 0;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
